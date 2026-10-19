@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha Mestra: Engenharia de Agentes de IA & Consultoria Corporativa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { 50: '#f0fdf4', 100: '#dcfce7', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', 900: '#14532d' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Top Navbar -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-brand-500 text-slate-900 p-2 rounded-lg font-bold text-xl">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg leading-tight">AI Agent Mastery & Consultoria</h1>
+                    <p class="text-xs text-slate-400">Trilha Prática de Especialização Full-Stack & Negócios</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-sm text-slate-300">
+                <span><i class="fa-solid fa-graduation-cap text-brand-500 mr-1"></i> 5 Módulos</span>
+                <span><i class="fa-solid fa-code text-brand-500 mr-1"></i> Foco Prático & Negócios</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow grid grid-cols-1 lg:grid-cols-4 gap-8">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="lg:col-span-1 space-y-4">
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 sticky top-24">
+                <h2 class="font-bold text-slate-900 mb-3 uppercase text-xs tracking-wider">Módulos do Curso</h2>
+                <nav class="space-y-1 text-sm">
+                    <a href="#mod1" class="flex items-center p-2 rounded-lg hover:bg-brand-50 text-slate-700 hover:text-brand-700 transition font-medium">
+                        <span class="w-6 font-bold text-brand-600">01</span> Fundamentos & LLMs
+                    </a>
+                    <a href="#mod2" class="flex items-center p-2 rounded-lg hover:bg-brand-50 text-slate-700 hover:text-brand-700 transition font-medium">
+                        <span class="w-6 font-bold text-brand-600">02</span> Arquitetura RAG
+                    </a>
+                    <a href="#mod3" class="flex items-center p-2 rounded-lg hover:bg-brand-50 text-slate-700 hover:text-brand-700 transition font-medium">
+                        <span class="w-6 font-bold text-brand-600">03</span> Tipos de Agentes & Modelos
+                    </a>
+                    <a href="#mod4" class="flex items-center p-2 rounded-lg hover:bg-brand-50 text-slate-700 hover:text-brand-700 transition font-medium">
+                        <span class="w-6 font-bold text-brand-600">04</span> Caso Prático: Móveis Elegance
+                    </a>
+                    <a href="#mod5" class="flex items-center p-2 rounded-lg hover:bg-brand-50 text-slate-700 hover:text-brand-700 transition font-medium">
+                        <span class="w-6 font-bold text-brand-600">05</span> Custos, Hospedagem & Pitch
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Content Area -->
+        <div class="lg:col-span-3 space-y-12">
+            
+            <!-- Hero Welcome Card -->
+            <section class="bg-gradient-to-r from-slate-900 to-slate-800 text-white p-8 rounded-2xl shadow-lg relative overflow-hidden">
+                <div class="relative z-10">
+                    <span class="bg-brand-500/20 text-brand-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Trilha Completa</span>
+                    <h2 class="text-3xl font-extrabold mt-3 mb-2">Transforme-se em um Consultor Especialista em Agentes de IA</h2>
+                    <p class="text-slate-300 text-sm max-w-2xl leading-relaxed">
+                        Este curso foi desenhado para ir do absoluto zero técnico em arquiteturas corporativas de IA até a entrega de soluções multi-agentes autônomas (com direito a cálculo de custos por tokens e pitch comercial). Siga os módulos abaixo em ordem.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Módulo 1 -->
+            <section id="mod1" class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-6">
+                <div class="flex items-center space-x-3 border-b pb-4">
+                    <span class="bg-brand-100 text-brand-800 font-bold px-3 py-1.5 rounded-lg text-sm">Módulo 01</span>
+                    <h3 class="text-xl font-bold text-slate-900">Fundamentos de LLMs e Engenharia de Prompt</h3>
+                </div>
+                
+                <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
+                    <p>
+                        Antes de criar agentes, você precisa dominar o motor que os impulsiona: os <strong>Large Language Models (LLMs)</strong>. Aprenda sobre tokenização, janelas de contexto, alucinações e como moldar o comportamento do modelo programaticamente.
+                    </p>
+                    
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">💡 O que você vai aprender na prática:</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>Configuração de ambiente com chaves de API (OpenAI / Anthropic / Groq).</li>
+                            <li>Técnicas de <em>Chain-of-Thought</em> (Cadeia de Pensamento) para forçar o modelo a raciocinar antes de responder.</li>
+                            <li>Uso de <em>JSON Mode</em> / <em>Function Calling</em> para saídas estruturadas em código.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-slate-900 mb-2">🔗 Materiais Oficiais de Estudo:</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank" class="flex items-center p-3 rounded-lg border border-slate-200 hover:border-brand-500 hover:bg-brand-50/50 transition group">
+                                <i class="fa-solid fa-graduation-cap text-brand-600 mr-3 text-lg"></i>
+                                <div>
+                                    <div class="font-medium text-slate-900 group-hover:text-brand-700">DeepLearning.AI: Prompt Engineering</div>
+                                    <div class="text-xs text-slate-500">Curso gratuito essencial</div>
+                                </div>
+                            </a>
+                            <a href="https://cookbook.openai.com/" target="_blank" class="flex items-center p-3 rounded-lg border border-slate-200 hover:border-brand-500 hover:bg-brand-50/50 transition group">
+                                <i class="fa-solid fa-book-open text-brand-600 mr-3 text-lg"></i>
+                                <div>
+                                    <div class="font-medium text-slate-900 group-hover:text-brand-700">OpenAI Cookbook</div>
+                                    <div class="text-xs text-slate-500">Exemplos práticos de código</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Módulo 2 -->
+            <section id="mod2" class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-6">
+                <div class="flex items-center space-x-3 border-b pb-4">
+                    <span class="bg-brand-100 text-brand-800 font-bold px-3 py-1.5 rounded-lg text-sm">Módulo 02</span>
+                    <h3 class="text-xl font-bold text-slate-900">RAG (Retrieval-Augmented Generation)</h3>
+                </div>
+                
+                <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
+                    <p>
+                        O RAG resolve a maior limitação dos LLMs: dados desatualizados ou privados. Ele permite que o modelo consulte documentos internos da empresa (manuais, tabelas de preço, histórico) em tempo real antes de formular uma resposta.
+                    </p>
+                    
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">⚙️ Pipeline Técnico do RAG:</h4>
+                        <p class="text-xs text-slate-500 mb-2">Ingestão $\rightarrow$ Chunking $\rightarrow$ Embeddings $\rightarrow$ Vector DB $\rightarrow$ Geração Baseada no Contexto.</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-slate-900 mb-2">🔗 Materiais Oficiais de Estudo:</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <a href="https://python.langchain.com/docs/tutorials/rag/" target="_blank" class="flex items-center p-3 rounded-lg border border-slate-200 hover:border-brand-500 hover:bg-brand-50/50 transition group">
+                                <i class="fa-solid fa-cubes text-brand-600 mr-3 text-lg"></i>
+                                <div>
+                                    <div class="font-medium text-slate-900 group-hover:text-brand-700">LangChain RAG Tutorial</div>
+                                    <div class="text-xs text-slate-500">Guia passo a passo em Python</div>
+                                </div>
+                            </a>
+                            <a href="https://docs.trychroma.com/" target="_blank" class="flex items-center p-3 rounded-lg border border-slate-200 hover:border-brand-500 hover:bg-brand-50/50 transition group">
+                                <i class="fa-solid fa-database text-brand-600 mr-3 text-lg"></i>
+                                <div>
+                                    <div class="font-medium text-slate-900 group-hover:text-brand-700">ChromaDB Documentation</div>
+                                    <div class="text-xs text-slate-500">Banco de dados vetorial local</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Módulo 3 -->
+            <section id="mod3" class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-6">
+                <div class="flex items-center space-x-3 border-b pb-4">
+                    <span class="bg-brand-100 text-brand-800 font-bold px-3 py-1.5 rounded-lg text-sm">Módulo 03</span>
+                    <h3 class="text-xl font-bold text-slate-900">Tipos de Agentes, Modelos (Claude Opus/Sonnet) & Frameworks (Fable/CrewAI)</h3>
+                </div>
+                
+                <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
+                    <p>
+                        Um <strong>Agente de IA</strong> não apenas responde, mas planeja, executa ações, utiliza ferramentas externas (APIs, calculadoras, SQL) e avalia seus próprios resultados através do ciclo <em>Plan $\rightarrow$ Act $\rightarrow$ Observe</em>.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                            <h4 class="font-semibold text-slate-900 mb-1"><i class="fa-solid fa-microchip text-brand-600 mr-2"></i>Panorama de Modelos (Opus, Sonnet, GPT-4o)</h4>
+                            <p class="text-xs text-slate-600 mb-2">Para dimensionar projetos, você deve escolher o modelo certo:</p>
+                            <ul class="list-disc pl-4 space-y-1 text-xs">
+                                <li class="text-slate-600"><strong>Claude 3 Opus (Anthropic):</strong> Altíssimo nível de raciocínio, excelente para arquiteturas complexas de agentes multi-etapas e código sofisticado.</li>
+                                <li class="text-slate-600"><strong>Claude 3.5 Sonnet:</strong> Ótimo equilíbrio entre velocidade, custo e inteligência avançada (líder de mercado em engenharia).</li>
+                                <li class="text-slate-600"><strong>GPT-4o / GPT-4o-mini:</strong> Rápidos, versáteis e ideais para chamadas multimodais em larga escala.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                            <h4 class="font-semibold text-slate-900 mb-1"><i class="fa-solid fa-network-wired text-brand-600 mr-2"></i>Padrões e Frameworks de Agentes</h4>
+                            <p class="text-xs text-slate-600 mb-2">Frameworks modernos para estruturar múltiplos agentes:</p>
+                            <ul class="list-disc pl-4 space-y-1 text-xs">
+                                <li class="text-slate-600"><strong>CrewAI / AutoGen:</strong> Focados em equipes de agentes colaborativos com papéis definidos (ex: Pesquisador, Escritor).</li>
+                                <li class="text-slate-600"><strong>LangGraph:</strong> Controle de fluxo determinístico em grafos, essencial para sistemas corporativos robustos.</li>
+                                <li class="text-slate-600"><strong>Fable (e afins):</strong> Ambientes de simulação e frameworks de orquestração para cenários dinâmicos.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-slate-900 mb-2">🔗 Materiais Oficiais de Estudo:</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <a href="https://www.crewai.com/" target="_blank" class="flex items-center p-3 rounded-lg border border-slate-200 hover:border-brand-500 hover:bg-brand-50/50 transition group">
+                                <i class="fa-solid fa-users-gear text-brand-600 mr-3 text-lg"></i>
+                                <div>
+                                    <div class="font-medium text-slate-900 group-hover:text-brand-700">CrewAI Documentation</div>
+                                    <div class="text-xs text-slate-500">Criação de equipes de agentes</div>
+                                </div>
+                            </a>
+                            <a href="https://langchain-ai.github.io/langgraph/" target="_blank" class="flex items-center p-3 rounded-lg border border-slate-200 hover:border-brand-500 hover:bg-brand-50/50 transition group">
+                                <i class="fa-solid fa-diagram-project text-brand-600 mr-3 text-lg"></i>
+                                <div>
+                                    <div class="font-medium text-slate-900 group-hover:text-brand-700">LangGraph Docs</div>
+                                    <div class="text-xs text-slate-500">Orquestração avançada em grafos</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Módulo 4 -->
+            <section id="mod4" class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-6">
+                <div class="flex items-center space-x-3 border-b pb-4">
+                    <span class="bg-brand-100 text-brand-800 font-bold px-3 py-1.5 rounded-lg text-sm">Módulo 04</span>
+                    <h3 class="text-xl font-bold text-slate-900">Caso Prático: A "Móveis Elegance" (Solução Corporativa)</h3>
+                </div>
+                
+                <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
+                    <p>
+                        Vamos aplicar a engenharia de agentes no mundo real simulando uma solução completa para uma loja de móveis de médio porte.
+                    </p>
+
+                    <div class="bg-brand-50/60 p-4 rounded-lg border border-brand-200 space-y-3">
+                        <h4 class="font-semibold text-brand-900">🏗️ Arquitetura da Solução "Móveis Elegance":</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+                            <div class="bg-white p-3 rounded border border-brand-200">
+                                <span class="font-bold text-brand-700 block mb-1">1. Agente de CRM & Vendas</span>
+                                Conectado via RAG ao catálogo de sofás, mesas e armários para responder clientes no WhatsApp 24/7.
+                            </div>
+                            <div class="bg-white p-3 rounded border border-brand-200">
+                                <span class="font-bold text-brand-700 block mb-1">2. Agente Financeiro</span>
+                                Conectado a planilhas/banco de dados via Tool Calling para auditar fluxo de caixa e despesas.
+                            </div>
+                            <div class="bg-white p-3 rounded border border-brand-200">
+                                <span class="font-bold text-brand-700 block mb-1">3. Agente de Logística</span>
+                                Recebe lista de endereços diários e otimiza rotas de entrega para a frota de caminhões.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Módulo 5 -->
+            <section id="mod5" class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-6">
+                <div class="flex items-center space-x-3 border-b pb-4">
+                    <span class="bg-brand-100 text-brand-800 font-bold px-3 py-1.5 rounded-lg text-sm">Módulo 05</span>
+                    <h3 class="text-xl font-bold text-slate-900">Dimensionamento de Custos, Hospedagem e Pitch Comercial</h3>
+                </div>
+                
+                <div class="space-y-4 text-slate-600 text-sm leading-relaxed">
+                    <p>
+                        Para chegar em uma empresa e vender o seu projeto, você precisa saber calcular exatamente quanto custará rodar a IA e demonstrar o Retorno Sobre o Investimento (ROI).
+                    </p>
+
+                    <!-- Seção Teórica de Custos -->
+                    <div class="bg-slate-50 p-5 rounded-lg border border-slate-200 space-y-3">
+                        <h4 class="font-bold text-slate-900 text-base"><i class="fa-solid fa-calculator text-brand-600 mr-2"></i>Teoria de Dimensionamento e Custos de LLMs</h4>
+                        <p class="text-xs text-slate-600">
+                            Os custos de APIs de LLM são calculados por <strong>Tokens</strong> (aproximadamente 4 caracteres ou 0.75 palavras em inglês). Existem dois tipos de custos: Tokens de Entrada (Prompt) e Tokens de Saída (Completion).
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                            <div class="bg-white p-3 rounded border border-slate-200 text-xs space-y-1">
+                                <span class="font-bold text-slate-900 block">Exemplo Prático de Cálculo (Claude 3.5 Sonnet / GPT-4o mini):</span>
+                                <p>• Custo médio Input: $3.00 por 1 milhão de tokens (~R$ 15).</p>
+                                <p>• Custo médio Output: $15.00 por 1 milhão de tokens (~R$ 75).</p>
+                                <p class="text-brand-700 font-semibold pt-1">Se a loja de móveis faz 1.000 atendimentos/mês (média de 2.000 tokens por interação), o custo total de API será de ~$10 a $25/mês!</p>
+                            </div>
+                            <div class="bg-white p-3 rounded border border-slate-200 text-xs space-y-1">
+                                <span class="font-bold text-slate-900 block">Infraestrutura & Hospedagem:</span>
+                                <p>• Servidor VPS (DigitalOcean / AWS EC2): $20 - $40/mes para rodar o backend em Node.js/Python e o Vector DB.</p>
+                                <p>• Modelos Locais (Ollama com Llama 3): Custo zero de API, mas requer servidor dedicado com GPU (ex: AWS g4dn.xlarge).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                            <h4 class="font-semibold text-slate-900 mb-1">🚀 Hospedagem & Deploy</h4>
+                            <p class="text-xs text-slate-600">Containerização com Docker, deploy em servidores Linux, configuração de webhooks para WhatsApp (Evolution API ou Z-API) e monitoramento de logs.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                            <h4 class="font-semibold text-slate-900 mb-1">💼 O Pitch Comercial</h4>
+                            <p class="text-xs text-slate-600">Apresente para o empresário: 1. Diagnóstico do gargalo $\rightarrow$ 2. Demonstração viva do agente $\rightarrow$ 3. ROI (economia de horas de equipe e aumento de vendas) $\rightarrow$ 4. Implementação em etapas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 mt-12 border-t border-slate-800 text-center text-xs">
+        <p>Roteiro estruturado para Consultoria em Agentes de IA &bull; Pronto para salvar como arquivo HTML e acompanhar seus estudos.</p>
+    </footer>
+
+</body>
+</html>
